@@ -1,5 +1,5 @@
 package Main;
-
+//https://leetcode.com/problems/nth-magical-number/discuss/1622336/JAVA-or-Binary-Search-or-Detailed-Explanation-Using-Image
 public class q678 {
     public static int nthMagicalNumber(int n, int a, int b) {
 
@@ -17,7 +17,7 @@ public class q678 {
         }
 
         while (left < right) {
-            long m = left+(right-left)/2;
+            long m = left+right/2;
             long lcm = (a*b)/A;
             if ((m / a) + (m / b) - (m / lcm) < n) left = m + 1;
             else right = m;
