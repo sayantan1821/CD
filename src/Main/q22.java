@@ -4,14 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class q22 {
-    public List<String> generateParenthesis(int n) {
+    public static void main() {
+        List<String> str = new ArrayList<>();
+        str =  generateParenthesis(3);
+        for(int i=0; i < str.size(); i++){
+            System.out.println( str.get(i) );
+        }
+    }
+
+    public void main(String[] args) {
+
+    }
+    public static List<String> generateParenthesis(int n) {
         // TC - O(pow(2, 2n)), SC - O(n)
         List<String> res = new ArrayList<>();
         dfs(res, new StringBuilder(), n, n, n);
         return res;
     }
 
-    private void dfs(List<String> res, StringBuilder sb, int left, int right, int n) {
+    public static void dfs(List<String> res, StringBuilder sb, int left, int right, int n) {
         if(left == 0 && right == 0) {
             res.add(sb.toString());
             return;
