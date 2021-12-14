@@ -1,6 +1,9 @@
 package Main;
 //https://leetcode.com/problems/nth-magical-number/discuss/1622336/JAVA-or-Binary-Search-or-Detailed-Explanation-Using-Image
 public class q678 {
+    public static void main() {
+        System.out.println(nthMagicalNumber(1,2,3));
+    }
     public static int nthMagicalNumber(int n, int a, int b) {
         int sm = a;
         if (b < a) sm = b;

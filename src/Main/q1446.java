@@ -1,6 +1,9 @@
 package Main;
 
 public class q1446 {
+    public static void main() {
+        System.out.println(maxPower("Leetcode"));
+}
     public static int maxPower(String s) {
         if(s.length() == 1) return 1;
         int max = 0;
@@ -16,4 +19,6 @@ public class q1446 {
         if(count > max) max = count;
         return max;
     }
+
+
 }
