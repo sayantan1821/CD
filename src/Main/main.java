@@ -6,6 +6,7 @@ public class main {
 //        q1446.main();
 //        q22.main();
 //        q392.main();
+        q227.main();
     }
 
 
