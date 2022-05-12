@@ -13,9 +13,9 @@ public class arrays6 {
             if(a[i] > a[i + 1]) break;
         }
         rotate(a, i);
-        int serachResult = binarySearch(a, key, 0, a.length - 1);
-        if(serachResult == -1) return -1;
-        int ans = serachResult - a.length + 1 + i;
+        int searchResult = binarySearch(a, key, 0, a.length - 1);
+        if(searchResult == -1) return -1;
+        int ans = searchResult - a.length + 1 + i;
         if(ans < 0) ans = a.length + ans;
         return ans;
     }
